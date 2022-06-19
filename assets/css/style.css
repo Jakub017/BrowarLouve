@@ -1,0 +1,925 @@
+/* CSS Reset starts */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* CSS Reset ends */
+
+/* Cookies container starts */
+
+#cookies-container.active {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 290px;
+    background-color: #fff;
+    z-index: 10;
+    padding: 15px;
+    line-height: 200%;
+    border: 2px solid #B08363;
+    display: block;
+    display: none;
+}
+
+#cookies-container {
+    display: none;
+}
+
+#cookies-container h5 {
+    font-size: 18px;
+}
+
+#cookies-container p {
+    font-size: 14px;
+}
+
+#cookies-container a {
+    color: #B08363;
+}
+
+/* Cookies container ends */
+
+/* Nav starts */
+
+header nav {
+    height: 100px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    transition: 0.6s;
+    z-index: 10;
+    display: flex;
+}
+
+nav .logo a:hover {
+    color: white;
+}
+
+nav.sticky {
+    background-color: #fff;
+    color: black;
+    box-shadow: 5px 2px 2px gray;
+}
+
+nav.sticky.logo a {
+    color: black;
+}
+
+nav.sticky .logo a:hover {
+    color: black;
+}
+
+nav.sticky .logo {
+    color: black;
+}
+
+.sticky a {
+    color: black;
+}
+
+nav.sticky ul li {
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    padding: 25px 15px 15px 15px;
+}
+
+nav ul {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    flex-basis: 25%;
+    padding: 35px 15px 15px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav ul li:hover {
+    color: #B08363;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 8%;
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.hamburger-container span {
+    background-color: #fff;
+    border-radius: 5rem;
+    width: 100%;
+    height: 5px;
+}
+
+nav.sticky .hamburger-container span {
+    background-color: #000;
+}
+
+ul.mobile {
+    top: 0;
+    right: -100%;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 2px 2px gray;
+    color: black !important;
+    z-index: 11;
+    list-style: none;
+    font-size: 1.3rem;
+    transition: 1s;
+}
+
+ul.mobile a {
+    padding: 20px;
+}
+
+ul.mobile a {
+    color: black;
+}
+
+ul.mobile img {
+    width: 150px;
+}
+
+.fa-times {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+ul.mobile.active {
+    right: 0;
+}
+
+/* Nav ends */
+
+/* Header starts */
+
+header {
+    background-image: url("../img/tlowebp-header.webp");
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 750px;
+    position: relative;
+}
+
+header::after {
+    display: none;
+}
+
+.welcome {
+    color: white;
+    top: 20%;
+    bottom: 50%;
+    left: 20%;
+    position: absolute;
+    max-width: 450px;
+}
+
+.welcome img {
+    width: 60%;
+}
+
+.welcome h1 {
+    margin-top: 40px;
+}
+
+.welcome button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.welcome button:hover {
+    background-color: #fff;
+    color: #B08363;
+}
+
+/* Header ends */
+
+/* About brewery section starts */
+
+section#about {
+    max-width: 1400px;
+    margin: 20px auto 20px auto;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.beer img {
+    width: 80%;
+    transition: 1s;
+}
+
+.beer {
+    flex-basis: 40%;
+    opacity: 0;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+.beer.active {
+    opacity: 1;
+}
+
+.about-text {
+    flex-basis: 60%;
+}
+
+.about-text span:first-child {
+    margin-left: 42px;
+}
+
+#about h2 {
+    font-size: 42px;
+    text-indent: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#about-me h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.intro {
+    color: #B08363;
+}
+
+.border-right-1 {
+    height: 3px;
+    width: 45px;
+    background: #B08363;
+    right: -5px;
+    display: inline-block;
+    top: -6px;
+    position: relative;
+}
+
+.border-left-1 {
+    height: 3px;
+    width: 45px;
+    background: #B08363;
+    left: -5px;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+}
+
+
+.about-items {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.about-item {
+    flex-basis: 45%;
+    line-height: 170%;
+    padding: 10px;
+    display: flex;
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-item.active {
+    opacity: 1;
+}
+
+.icon {
+    padding-right: 15px;
+}
+
+.about-item h3 {
+    margin-bottom: 10px;
+}
+
+.about-item:nth-child(even) {
+    margin-bottom: 30px;
+}
+
+/* About brewery section ends */
+
+/* Tutorial section starts */
+
+#tutorial {
+    background-image: url('../img/kranwebp.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#tutorial::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.tutorial-text {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    line-height: 200%;
+}
+
+.tutorial-text h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #B08363;
+}
+
+.tutorial-text p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 200%;
+}
+
+.tutorial-text a {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tutorial-text a:hover {
+    background-color: #fff;
+    color: #B08363;
+}
+
+#brews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#brews h1 {
+    font-size: 42px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+/* Tutorial section ends */
+
+/* Years slider starts */
+
+#brews .row:nth-of-type(2) {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.year {
+    width: 300px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#ul.autoWidth {
+    max-height: 0;
+}
+
+.year-image img {
+    width: 100%;
+}
+
+.year-text {
+    margin-top: 10px;
+    line-height: 200%;
+    padding: 0px 20px 20px 20px;
+}
+
+.year-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.year-button {
+    background-color: transparent;
+    border: 2px solid #B08363;
+    color: #B08363;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.year-button:hover {
+    background-color: #B08363;
+    color: white;
+}
+
+.scroll {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Year slider ends */
+
+/* Stats section starts */
+
+#stats {
+    background-color: #efefef;
+    padding: 70px;
+    box-shadow: 0 0 5px #efefef;
+    /* width: 100%; */
+}
+
+#stats .row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat-value {
+    font-size: 40px;
+}
+
+.stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-name {
+    color: #B08363;
+}
+
+/* Stats section ends */
+
+
+/* About me starts */
+
+#about-me h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#about-me {
+    padding: 38px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+#about-me .row:nth-of-type(2) {
+    background-color: #efefef;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me .row:nth-of-type(2) .line:first-child {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(2) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(3) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(4) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    top: 10px;
+    right: -19px;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(5) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(6) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+#about-me .row:nth-of-type(2) .line:nth-child(7) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+
+#about-me .row:nth-of-type(2) .line:nth-child(8) {
+    width: 50px;
+    height: 2px;
+    background-color: #B08363;
+    position: absolute;
+    bottom: 9px;
+    right: 30px;
+    transform-origin: 100%;
+    transform: rotate(90deg)
+}
+
+
+.me-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.me-photo img {
+    width: 350px;
+}
+
+.me-text {
+    flex-basis: 50%;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+    line-height: 260%;
+}
+
+.me-text h2 {
+    text-align: left;
+}
+
+.socials {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #B08363
+}
+
+.socials a {
+    color: #B08363
+}
+
+.socials i {
+    transition: 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    opacity: 1;
+}
+
+/* About me ends */
+
+/* Footer starts */
+
+footer {
+    background-color: #292929;
+}
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+
+.footer-text {
+    text-align: left;
+    color: white;
+    padding-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-text i {
+    font-size: 3rem;
+    margin: 20px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.end {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #202020;
+}
+
+.footer-text i:hover {
+    opacity: 1;
+}
+
+.end a {
+    color: white;
+}
+
+.end a:hover {
+    color: #B08363;
+}
+
+.contributions {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+/* Footer ends */
+
+
+/* Media queries starts */
+
+@media (max-width: 991px) {
+
+    .about-text span:first-child {
+        margin: 0;
+    }
+
+    #about-me h2,
+    #about h2 {
+        text-indent: 0;
+    }
+
+    #about .row .beer {
+        display: none;
+    }
+
+    .about-items {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-item:nth-child(even) {
+        margin-bottom: 0;
+    }
+
+    .about-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .about-item .icon {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .stat {
+        margin: 30px;
+    }
+
+    #about-me p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .me-photo img {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .me-photo {
+        margin-top: 30px;
+    }
+
+    .me-text .socials {
+        text-align: center;
+    }
+
+    .me-text {
+        text-align: justify;
+    }
+
+    .tutorial-text p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-items {
+        flex-direction: column;
+    }
+
+    .about-item {
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .welcome {
+        left: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome {
+        width: 80%;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        height: 400px;
+    }
+
+    header::after {
+        display: block;
+        content: '';
+        min-width: 100%;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .welcome button {
+        margin-top: 20px;
+    }
+
+    .me-photo img {
+        width: 200px;
+    }
+
+    #about-me p {
+        font-size: 85%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .me-text {
+        padding: 0;
+    }
+
+    .tutorial-text p {
+        font-size: 95%;
+        margin-bottom: -10px;
+    }
+
+    .tutorial-text a {
+        width: 300px;
+    }
+
+    .socials {
+        padding-bottom: 30px;
+    }
+}
