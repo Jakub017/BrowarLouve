@@ -1,0 +1,23 @@
+{
+  "name": "browarlouve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakub017/BrowarLouve.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakub017/BrowarLouve/issues"
+  },
+  "homepage": "https://github.com/Jakub017/BrowarLouve#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
